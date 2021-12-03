@@ -4,7 +4,16 @@ namespace EmiCalc
 {
     internal class Program
     {
-        static void Main(string[] args)
+        internal class EmiCalc
+        {
+            public double EmiCalculator(double p, double i, double t, double n)
+            {
+                double emi;
+                emi = p * Math.Pow((1 + i / n), (t * n));
+                return (emi) / 24;
+            }
+        }
+            static void Main(string[] args)
         {
             var sp=new EmiCalc();
             double p, i, n, t, emi;
