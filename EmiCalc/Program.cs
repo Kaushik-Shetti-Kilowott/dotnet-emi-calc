@@ -23,6 +23,7 @@ namespace EmiCalc
                 n = Convert.ToDouble(Console.ReadLine());
                 emi = sp.CalculateEmi(p, i, t, n);
                 Console.WriteLine("Monthly EMI is =" + Math.Round(emi, 2) + " INR");
+                //Console.WriteLine("Monthly EMI is =" + emi + " INR");
 
             }
             catch (FormatException e)
@@ -32,7 +33,7 @@ namespace EmiCalc
             }
             finally
             {
-                Console.WriteLine("Please re run the program and pass only valid input");
+                Console.WriteLine("Program executed perfectly");
 
             }
          
