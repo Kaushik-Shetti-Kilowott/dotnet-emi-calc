@@ -33,7 +33,7 @@ namespace EmiCalc
             }
             finally
             {
-                Console.WriteLine("Program executed perfectly");
+                Console.WriteLine("Program terminated");
 
             }
          
